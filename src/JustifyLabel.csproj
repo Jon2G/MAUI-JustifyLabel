@@ -22,13 +22,13 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>JustifyLabel-MAUI</Title>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<RepositoryUrl>https://github.com/Jon2G/MAUI-FlipView</RepositoryUrl>
+		<RepositoryUrl>https://github.com/Jon2G/MAUI-JustifyLabel</RepositoryUrl>
 		<PackageTags>MAUI,JUSTIFY,JUSTIFIED,LABEL,XAMARIN,CONTENTVIEW,TEXTVIEW,TEXT,JUSTIFICATION</PackageTags>
 		<NeutralLanguage>en</NeutralLanguage>
 		<IncludeSymbols>True</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PackageId>$(AssemblyName)-MAUI</PackageId>
-		<PackageProjectUrl>https://github.com/Jon2G/MAUI-FlipView</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/Jon2G/MAUI-JustifyLabel</PackageProjectUrl>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<Description>
 			A custom render to allow justifying text on label
