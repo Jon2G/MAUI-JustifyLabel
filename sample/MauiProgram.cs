@@ -2,7 +2,7 @@
 using Microsoft.Maui.Handlers;
 using JustifyLabel;
 
-namespace Sample;
+namespace sample;
 
 public static class MauiProgram
 {

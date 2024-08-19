@@ -1,10 +1,4 @@
-﻿#if ANDROID
-using JustifyLabel.Platforms.Android;
-#endif
-#if IOS
-using JustifyLabel.Platforms.iOS;
-#endif
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,11 +12,18 @@ namespace JustifyLabel
         {
             builder.ConfigureMauiHandlers(handlers =>
             {
-#if ANDROID
-                handlers.AddHandler<JustifiedLabel, JustifiedLabelHandler>();
-#elif IOS
-                handlers.AddHandler(typeof(JustifiedLabel), typeof(JustifiedLabelHandler));
+#if ANDROID                
+handlers.AddHandler<JustifiedLabel, JustifyLabel.Platforms.Android.JustifiedLabelHandler>();
+#elif IOS                
+                handlers.AddHandler<JustifiedLabel, JustifyLabel.Platforms.iOS.JustifiedLabelHandler>();
+#elif MACCATALYST                
+handlers.AddHandler<JustifiedLabel, JustifyLabel.Platforms.MacCatalyst.JustifiedLabelHandler>();
+#elif WINDOWS               
+handlers.AddHandler<JustifiedLabel, JustifyLabel.Platforms.Windows.JustifiedLabelHandler>();
+#elif TIZEN
+                handlers.AddHandler<JustifiedLabel, JustifyLabel.Platforms.Tizen.JustifiedLabelHandler>();
 #endif
+
             }
             );
             return builder;

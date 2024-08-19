@@ -4,24 +4,26 @@ using Microsoft.Maui.Handlers;
 
 namespace JustifyLabel.Platforms.Android;
 
-public class JustifiedLabelHandler : LabelHandler
+public class JustifiedLabelHandler : JustifyLabel.JustifiedLabelHandler
 {
     private static readonly IPropertyMapper<
         JustifyLabel.JustifiedLabel,
         JustifiedLabelHandler
     > PropertyMapper = new PropertyMapper<JustifyLabel.JustifiedLabel, JustifiedLabelHandler>(Mapper)
     {
-        [nameof(JustifiedLabel.JustifyText)] = MapJustificationMode
+        [nameof(JustifiedLabel.JustifyText)] = SetPlatformProperties
     };
 
     public JustifiedLabelHandler() : base(PropertyMapper)
     {
     }
-
-    public static void MapJustificationMode(ILabelHandler handler, ILabel label)
+    public static void SetPlatformProperties(ILabelHandler? handler, ILabel? label)
     {
-        bool isJustified = label is JustifiedLabel jLabel && jLabel.JustifyText;
-
+        bool isJustified = IsJustified(label);
+        if(handler is null)
+        {
+            return;
+        }
         if (Build.VERSION.SdkInt >= BuildVersionCodes.M)
         {
             handler.PlatformView.BreakStrategy = isJustified
