@@ -15,12 +15,10 @@ Provides the ability to justify the text in a Label via attached property or by 
 ![Sample](https://raw.githubusercontent.com/Jon2G/MAUI-JustifyLabel/main/android_2.PNG)
 
 ### iOS
-![Sample](https://raw.githubusercontent.com/Jon2G/MAUI-JustifyLabel/main/ios_1.PNG)
-![Sample](https://raw.githubusercontent.com/Jon2G/MAUI-JustifyLabel/main/ios_2.PNG)
+![Sample](https://raw.githubusercontent.com/Jon2G/MAUI-JustifyLabel/main/ios.jpeg)
 
 ### MacCatalysis
-![Sample](https://raw.githubusercontent.com/Jon2G/MAUI-JustifyLabel/main/mac_1.PNG)
-![Sample](https://raw.githubusercontent.com/Jon2G/MAUI-JustifyLabel/main/_2.PNG)
+![Sample](https://raw.githubusercontent.com/Jon2G/MAUI-JustifyLabel/main/mac.PNG)
 
 
 ### Usage:

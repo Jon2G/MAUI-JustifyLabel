@@ -18,7 +18,7 @@ public class JustifiedLabelHandler : JustifyLabel.JustifiedLabelHandler
         bool isJustified = IsJustified(label);
         if (handler is not null)
         {
-            handler.PlatformView.TextAlignment = isJustified ? UITextAlignment.Natural : UITextAlignment.Justified;
+            handler.PlatformView.TextAlignment = isJustified ? UITextAlignment.Justified : UITextAlignment.Natural;
         }
 
     }
