@@ -31,18 +31,18 @@
 		<PackageProjectUrl>https://github.com/Jon2G/MAUI-JustifyLabel</PackageProjectUrl>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<Description>
-			A custom render to allow justifying text on label
+			Provides the ability to justify the text in a Label via attached property or by using a custom control.
 		</Description>
 		<Copyright>none</Copyright>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 
 	</PropertyGroup>
 	<ItemGroup>
 		<ProjectCapability Include="Maui" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.80" />
-		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.80" />
+		<!--<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.80" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.80" />-->
 		<None Include="..\LICENSE">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
