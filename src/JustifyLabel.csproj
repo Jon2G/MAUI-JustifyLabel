@@ -34,7 +34,7 @@
 			Provides the ability to justify the text in a Label via attached property or by using a custom control.
 		</Description>
 		<Copyright>none</Copyright>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 
 	</PropertyGroup>
 	<ItemGroup>
